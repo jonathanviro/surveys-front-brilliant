@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Tipo encuesta</title>
+</head>
+<body>
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-size-1">SELECCIONE LA ENCUESTA</h1>
+                <div class="columns is-centered mt-5">
+                    <div class="column is-one-third">
+                        <div class="card is-pointer" id="behavior">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="src/assets/images/work1.webp" alt="Example image" />
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="columns is-vcentered">
+                                    <div class="column has-text-left">
+                                        <div class="content has-text-weight-bold">
+                                            Comportamiento
+                                        </div>
+                                    </div>
+                                    <div class="column has-text-right">
+                                        <span id="behavior-status" class="tag is-success has-text-weight-bold">Realizado</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="card is-pointer" id="interest">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="src/assets/images/work2.webp" alt="Example image" />
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="columns is-vcentered">
+                                    <div class="column has-text-left">
+                                        <div class="content has-text-weight-bold">
+                                            Intereses
+                                        </div>
+                                    </div>
+                                    <div class="column has-text-right">
+                                        <span id="interest-status" class="tag is-success has-text-weight-bold">Realizado</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-one-third">
+                        <div class="card is-pointer" id="archetype">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="src/assets/images/work3.webp" alt="Example image" />
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="columns is-vcentered">
+                                    <div class="column has-text-left">
+                                        <div class="content has-text-weight-bold">
+                                            Arquetipos
+                                        </div>
+                                    </div>
+                                    <div class="column has-text-right">
+                                        <span id="archetype-status" class="tag is-success has-text-weight-bold">Realizado</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script type="module" src="src/js/surveyType.js"></script>
+</html>

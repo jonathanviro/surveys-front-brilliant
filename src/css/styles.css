@@ -1,0 +1,141 @@
+@import url('https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css');
+
+.card.is-pointer {
+    cursor: pointer;
+}
+
+.option-block {
+    cursor: pointer;
+}
+
+.panel-heading-custom {
+    background-color: #c0dbdf;
+    color: #00796b;
+}
+
+.option-block.selected {
+    background-color: #236d69;
+    border: 2px solid #134a48; 
+    font-weight: bold;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 1050;
+    backdrop-filter: blur(5px); /* Add a blur effect to the background */
+}
+
+.modal.is-active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4); /* Darken the background */
+}
+
+.modal-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-card {
+    position: relative;
+    margin: auto;
+    max-width: 400px;
+    background: #c04f4f;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-card-head.is-success {
+    padding: 20px;
+    border-bottom: 1px solid #FEFEFE;
+    border-radius: 8px 8px 0 0;
+    background-color: #48c774;
+    text-align: center; /* Center align the title */
+}
+
+.modal-card-head.is-danger {
+    padding: 20px;
+    border-bottom: 1px solid #FEFEFE;
+    border-radius: 8px 8px 0 0;
+    background-color: #F55454;
+    text-align: center; /* Center align the title */
+}
+
+.modal-card-head.is-info {
+    padding: 20px;
+    border-bottom: 1px solid #FEFEFE;
+    border-radius: 8px 8px 0 0;
+    background-color: #209cee;
+    text-align: center; /* Center align the title */
+}
+
+.modal-card-title {
+    margin: 0;
+    font-size: 2rem; /* Increase font size for the icon */
+    color: white; /* White text color for better contrast */
+}
+
+.modal-card-body {
+    padding: 20px;
+    color: rgb(36, 33, 33);
+    background-color: #FEFEFE;
+    text-align: center; /* Center align the body text */
+}
+
+.modal-card-foot {
+    padding: 10px;
+    border-top: 1px solid #FEFEFE;
+    border-radius: 0 0 8px 8px;
+    background-color: #FEFEFE;
+    text-align: center;
+}
+
+.button.is-success {
+    background-color: #48c774; /* Match modal background color */
+    color: white;
+    border: none;
+}
+
+.button.is-danger {
+    background-color: #F55454; /* Match modal background color */
+    color: white;
+    border: none;
+}
+
+.button.is-info {
+    background-color: #209cee; /* Match modal background color */
+    color: white;
+    border: none;
+}
+
+.modal .delete,
+.modal .button {
+    cursor: pointer;
+}
+
+.modal-card-foot .button {
+    margin: auto; /* Center the button */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
